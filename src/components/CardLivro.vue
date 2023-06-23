@@ -1,5 +1,7 @@
 <script setup>
 import MButton from './MButton.vue'
+import CartPlus from 'vue-material-design-icons/CartPlus.vue'
+import ShareVariant from 'vue-material-design-icons/ShareVariant.vue'
 
 const props = defineProps({
   livro: Object
@@ -23,11 +25,11 @@ function formatarPreco(preco) {
       <p class="preco-livro">{{ formatarPreco(props.livro.price) }}</p>
     </div>
     <div class="card-buttons-livros">
-      <m-button
-        @click="emit('adicionarAoCarrinho', props.livro)"
-        text="Adicionar ao carrinho"
-      ></m-button>
-      <m-button text="Compartilhar" />
+    <m-button @click="emit('adicionarAoCarrinho', props.livro)">
+    <cart-plus />
+</m-button>
+<m-button> <share-variant /> </m-button>
+
     </div>
   </div>
 </template>

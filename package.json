@@ -10,7 +10,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.3.2"
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/js": "^7.2.96",
+    "vue": "^3.3.2",
+    "vue-material-design-icons": "^5.2.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
